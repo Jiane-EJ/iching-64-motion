@@ -21,6 +21,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ---
-Fonts in public/ are NOT covered by the MIT license above. They are subsets of
-LXGW WenKai and Ma Shan Zheng, each licensed under the SIL Open Font License 1.1
-(see fonts/OFL_LXGWWenKai.txt and fonts/OFL_MaShanZheng.txt).
+Fonts in public/ (kaiti.ttf, xingkai.ttf) are NOT covered by the MIT license
+above. They are glyph subsets of Apple macOS system fonts (Kaiti SC, Xingkai SC);
+copyright belongs to their respective owners.

@@ -7,12 +7,10 @@ import {HexG} from './fx';
 import {XT} from './data';
 import {SCN} from './scenes';
 
-const hasFile = (n: string) => getStaticFiles().some((x) => x.name === n);
 const fontHandle = delayRender('fonts');
 Promise.all([
-	// 本地放了苹果楷体/行楷子集（public/kaiti.ttf、xingkai.ttf，不随仓库分发）就用它们，否则用开源字体
-	new FontFace('KaiX', `url(${staticFile(hasFile('kaiti.ttf') ? 'kaiti.ttf' : 'wenkai_sub.ttf')})`).load(),
-	new FontFace('XingX', `url(${staticFile(hasFile('xingkai.ttf') ? 'xingkai.ttf' : 'mashanzheng_sub.ttf')})`).load(),
+	new FontFace('KaiX', `url(${staticFile('kaiti.ttf')})`).load(),
+	new FontFace('XingX', `url(${staticFile('xingkai.ttf')})`).load(),
 ]).then((fs) => { fs.forEach((x) => document.fonts.add(x)); continueRender(fontHandle); }).catch(() => continueRender(fontHandle));
 
 const CH = ['生成', '方圆', '错综', '互变', '序卦', '消息', '八宫'];
