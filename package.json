@@ -1,0 +1,38 @@
+{
+  "name": "iching-64-motion",
+  "version": "1.0.0",
+  "description": "《易经》六十四卦结构动画 · I Ching 64 Hexagrams motion graphics, made entirely with code (Remotion + React + SVG/three.js)",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "music": "node --experimental-strip-types dump_tl.mts > timeline.json && python3 gen_music.py",
+    "render": "remotion render src/index.ts Gua out/iching-64-motion.mp4"
+  },
+  "keywords": [
+    "i-ching",
+    "yijing",
+    "易经",
+    "周易",
+    "六十四卦",
+    "hexagram",
+    "remotion",
+    "motion-graphics",
+    "data-visualization",
+    "chinese-culture"
+  ],
+  "author": "jianxinss (X: @voidJan)",
+  "license": "MIT",
+  "dependencies": {
+    "@react-three/fiber": "^8.18.0",
+    "@remotion/cli": "^4.0.533",
+    "@remotion/three": "^4.0.533",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.533",
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/three": "^0.169.0",
+    "typescript": "^7.0.2"
+  }
+}
