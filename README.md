@@ -102,10 +102,11 @@ docs/         README 截图
 ## 字体与授权
 
 - **代码**：MIT License，见 [LICENSE](LICENSE)。
-- **字体**：`public/` 中的两款字体不在 MIT 授权范围内。
-  - [霞鹜文楷 LXGW WenKai](https://github.com/lxgw/LxgwWenKai)（正文楷体）
-  - [马善政 Ma Shan Zheng](https://fonts.google.com/specimen/Ma+Shan+Zheng)（标题）
-  - 两者均为 SIL Open Font License 1.1，本仓库只收录片中用到的字符子集，授权文件见 `fonts/`。
+- **成片用字**：苹果系统自带的楷体与行楷（Kaiti SC / Xingkai SC）。因授权原因，仓库里不包含这两款字体文件。
+- **自己运行时的字体**：
+  - 如果你在 macOS 上，可以把这两款字体的子集放在 `public/kaiti.ttf` 和 `public/xingkai.ttf`，程序会优先使用，效果与成片一致。
+  - 否则程序会自动改用仓库自带的开源字体：[霞鹜文楷 LXGW WenKai](https://github.com/lxgw/LxgwWenKai) 和 [马善政 Ma Shan Zheng](https://fonts.google.com/specimen/Ma+Shan+Zheng)。
+  - 这两款开源字体均为 SIL Open Font License 1.1，不在 MIT 授权范围内，授权文件见 `fonts/`。
 
 ## 声明
 
