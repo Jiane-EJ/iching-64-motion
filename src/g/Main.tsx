@@ -73,7 +73,14 @@ export const GMain: React.FC = () => {
 	return (
 		<AbsoluteFill style={{background: 'radial-gradient(ellipse at 50% 45%, #141a22 0%, #030406 80%)'}}>
 			{hasMusic() ? <Audio src={staticFile('music.wav')} /> : null}
-			{SCENES.map(([C, d], i) => <Sequence key={i} from={STARTS[i]} durationInFrames={d}><C /></Sequence>)}
+			{SCENES.map(([C, d], i) => <Sequence
+				key={i}
+				from={STARTS[i]}
+				durationInFrames={d}
+				style={{
+					scale: 1.016
+				}}
+			><C /></Sequence>)}
 			<AbsoluteFill style={{background: 'radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,0.5) 100%)', pointerEvents: 'none'}} />
 			<div style={{position: 'absolute', left: 0, bottom: 0, height: 4, width: `${(f / TOTAL) * 100}%`, background: `linear-gradient(90deg,${GOLD},#5ea8ff)`}} />
 			<AbsoluteFill style={{background: '#fff', opacity: flash, pointerEvents: 'none'}} />
